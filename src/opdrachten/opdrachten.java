@@ -38,13 +38,28 @@ public class opdrachten
 	    System.out.println(fbReeks.get(i));
 	}
 	
-//	Opdracht 3:
-//
+//Opdracht 3:
 //	    Schrijf een programma die test of de eerste en de laatste waarde in een array hetzelfde zijn.
-//
 //	    Experimenteer met arrays van verschillende lengte en inhoud.
-//
+//	    Denk na over hoe je dit zou moeten testen en maak een testset om de juistheid van Je code aan te tonen.
+	ArrayList<Long> compareHighest = new ArrayList<Long>();
+	
+	compareHighest.add(1L);
+	compareHighest.add(2L);
+	
+	for(int i = 0; i < 20; i++) {
+	    compareHighest.add(compareHighest.get(i) + compareHighest.get(i+1)); 
+	 if (compareHighest.get(0).equals(compareHighest.get(i))) {
+
+	    System.out.println("even");
+	} else{
+	    System.out.println("not even");
+	}
+	}
+//	Opdracht 4:
+//	    Schrijf een programma die de grootste waarde in een array bepaalt.
 //	    Denk na over hoe je dit zou moeten testen en maak een testset om de juistheid van je code aan te tonen.
+	
 	
     }
 }
